@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/go_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#3F51B5"
+        android:shadowColor="#A34283"
+        android:text="GO"
+        android:textSize="24sp"
+        android:padding="4dp"
+        android:focusableInTouchMode="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/textView_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:text="30s"
+            android:textSize="24dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textView_sum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="10+4"
+            android:textSize="24dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textView_score"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            android:text="0/1"
+            android:textSize="24dp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tablelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+
+
+       >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/num1_button"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:background="#00BCD4"
+                android:clickable="false"
+                android:text="2"
+                android:textIsSelectable="false"
+                android:textSize="24sp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/num2_button"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:background="#E91E63"
+                android:text="2"
+                android:textSize="24sp"
+                android:visibility="invisible" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/num3_button"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:background="#9F37B1"
+                android:clickable="false"
+                android:text="2"
+                android:textSize="24sp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/num4_button"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+
+                android:background="#E0CC19"
+                android:clickable="false"
+                android:text="2"
+                android:textColorHighlight="#009B3838"
+                android:textSize="24sp"
+                android:visibility="invisible" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tablelayout"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:text=""
+        android:textSize="24dp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/play_agin_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_result"
+        android:layout_centerInParent="true"
+        android:background="#3F51B5"
+        android:clickable="false"
+        android:focusableInTouchMode="true"
+        android:text="play agin"
+        android:textSize="18sp"
+        android:padding="4dp"
+        android:visibility="invisible" />
+
+
+
+
+</RelativeLayout>
